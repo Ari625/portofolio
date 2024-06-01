@@ -1,0 +1,70 @@
+body{
+   margin: 0;
+   padding: 0;
+   background-color: black;
+}
+
+nav{
+   background-color: black;
+}
+
+nav>ul{
+   margin-top: 0;
+   list-style: none;
+   display: flex;
+}
+
+nav>ul>li{
+   margin-top: 10px;
+   margin-bottom: 10px;
+   margin-right: 10px;
+   margin-left: 10px;
+}
+nav>ul>li>button{
+   background-color: black;
+   color: white;
+   font-size: 22px;
+   border: none;
+   border-radius: 12px;
+   -webkit-border-radius: 12px;
+   -moz-border-radius: 12px;
+   -ms-border-radius: 12px;
+   -o-border-radius: 12px;
+}
+nav>ul>li>button:hover{
+   background-color: rgb(58, 35, 35);
+   transform: scale(1.5);
+   -webkit-transform: scale(1.5);
+   -moz-transform: scale(1.5);
+   -ms-transform: scale(1.5);
+   -o-transform: scale(1.5);
+}
+
+header{
+   padding: 0;
+   max-height: auto;
+   color: white;
+   display: flex;
+   justify-content: center;
+   height: 100vh;
+   font-family: 'Courier New', Courier, monospace;
+}
+
+.typing-effect{
+   font-size: 2em;
+   border-right: .15em solid white;
+   white-space: nowrap;
+   overflow: hidden;
+}
+
+#cursor{
+   display: inline-block;
+   animation: blink 0.7s steps(2, start) infinite;
+   -webkit-animation: blink 0.7s steps(2, start) infinite;
+}
+
+@keyframes blink {
+   0% {opacity: 1;}
+   50% {opacity: 0;}
+   100% {opacity: 1;}
+}
